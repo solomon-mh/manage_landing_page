@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>| TailwindCSS project One</title>
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" />
   <link rel="stylesheet" href="output.css">
+
+
 </head>
 
 <body>
@@ -145,11 +148,11 @@
   </section>
 
   <!-- CTA section -->
-  <section class=" bg-brightRed">
+  <section class=" bg-brightRed min-h-max">
     <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 space-x-24 p-10 lg:flex-row">
+      class="container flex flex-col items-center justify-between px-6 py-14 mx-auto space-y-12 space-x-24 p-10 lg:flex-row">
       <div class="w-1/2 ml-12">
-        <h2 class="text-4xl text-slate-200 font-bold leading-tight text-center lg:text-left">Simplify How your team
+        <h2 class="text-4xl text-slate-800 font-bold leading-tight text-center lg:text-left">Simplify How your team
           work today!</h2>
       </div>
       <div class="w-1/2 mr-12">
@@ -162,8 +165,47 @@
     </div>
   </section>
   <!-- Footer -->
-  <footer>
-
+  <footer class="bg-black ">
+    <div class="container flex flex-col-reverse items-center justify-around gap-12 p-10  lg:flex-row ">
+      <div class=" w-1/5 md:w-fit space-y-2">
+        <div class="px-2 py-0 w-fit inverse">
+          <img src="../images/logo.svg" alt="logo">
+        </div>
+        <div class="flex px-2 py-1 w-fit space-x-2">
+          <a class="p-1 text-white">
+            <img src="../images/icon-facebook.svg" alt="fb-icon">
+          </a>
+          <a class="p-1 text-white">
+            <img src="../images/icon-instagram.svg" alt="instagram-icon">
+          </a>
+          <a class="p-1 text-white">
+            <img src="../images/icon-pinterest.svg" alt="pininterest-icon">
+          </a>
+          <a class="p-1 text-white">
+            <img src="../images/icon-twitter.svg" alt="twitter icon">
+          </a>
+          <a class="p-1">
+            <img src="../images/icon-youtube.svg" alt="yt-icon">
+          </a>
+        </div>
+      </div>
+      <div class="w-1/5 md:w-fit">
+        <ul class=" text-white grid grid-cols-2 gap-4">
+          <li>Home</li>
+          <li>ABout Us</li>
+          <li>Contact Us</li>
+          <li>Pricing</li>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="w-1/5 md:w-fit">
+        <input type="text" class="p-1 outline-none rounded-xl pl-3" placeholder="update in your inbox...">
+        <button
+          class="Px-2 py-1 baseline rounded-full bg-brightRed text-white hover:bg-veryPaleRed hover:text-black">GO</button>
+      </div>
+    </div>
   </footer>
 </body>
 
