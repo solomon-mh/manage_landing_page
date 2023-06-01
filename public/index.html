@@ -17,16 +17,19 @@
       <div class="pt-2">
         <img src="../images/logo.svg" alt="logo">
       </div>
-      <div class="hidden md:flex space-x-6">
+      <div id="menu-items" class="hidden md:flex space-x-6">
         <a href="#" class="hover:text-darkGrayishBlue transition-all 3s ease-in">Pricing</a>
         <a href="#" class="hover:text-darkGrayishBlue transition-all 3s ease-in">Product</a>
         <a href="#" class="hover:text-darkGrayishBlue transition-all 3s ease-in">About Us</a>
         <a href="#" class="hover:text-darkGrayishBlue transition-all 3s ease-in">Careers</a>
         <a href="#" class="hover:text-darkGrayishBlue transition-all 3s ease-in">Community</a>
+        <a href="#"
+          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get
+          Started</a>
       </div>
-      <a href="#"
-        class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get
-        Started</a>
+      <div id="menu-toggle" class="justify-right md:hidden hover:scale-125">
+        <img src="../images/icon-hamburger.svg" alt="hamburger-menu">
+      </div>
     </div>
   </nav>
   <!-- Hero Section -->
@@ -207,6 +210,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- script area -->
+  <script>
+    const menuItems = document.getElementById('menu-items');
+    const menuToggle = document.getElementById('menu-toggle');
+
+    menuToggle.addEventListener('click', () => {
+      menuItems.classList.toggle('hidden')
+    })
+
+
+  </script>
+
 </body>
 
 </html>
